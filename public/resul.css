@@ -1,0 +1,76 @@
+body {
+    background-color: #101114;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: #38393b;
+    padding: 20px;
+    margin: 30px auto;
+    border: 1px solid #555555;
+    width: 85%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+#titulo {
+    text-align: center;
+    color: #D9A66F;
+}
+
+.encabezado {
+    text-align: center;
+    color: #D9A66F;
+}
+
+.ejercicio {
+    background-color: #1C1E24;
+    padding: 20px 30px;
+    margin: 30px auto;
+    border: 1px solid #555555;
+    width: 85%;
+    max-width: 650px;
+}
+
+/* Cuadro de cada pedido (se repite según la cantidad) */
+.pedido {
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    margin: 0;
+    text-align: left;
+}
+
+.pedido p {
+    margin: 6px 0;
+    line-height: 1.5;
+    
+}
+
+.etiqueta {
+    color: #D9A66F;
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+/* Producto / Tamaño / Cantidad en una sola fila */
+.detalle {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 0 16px;
+}
+
+.sin-datos {
+    color: #AAAAAA;
+    margin: 20px 0;
+}
+
+@media (max-width: 520px) {
+    .detalle {
+        grid-template-columns: 1fr;
+    }
+}

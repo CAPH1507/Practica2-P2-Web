@@ -1,0 +1,91 @@
+body {
+    background-color: #101114;
+    color: white;
+    font-family: Arial;
+}
+
+#titulo {
+    text-align: center;
+    color: #D9A66F;
+}
+
+.encabezado {
+    text-align: center;
+    color: #D9A66F;
+}
+
+.ejercicio {
+    background-color: #1C1E24;
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+    border: 1px solid #555555;
+    width: 85%;
+    max-width: 550px;
+}
+
+h3 {
+    color: #D9A66F;
+    margin-top: 25px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    background-color: #30323A;
+    color: white;
+    border: 1px solid #777777;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%;
+}
+
+select {
+    padding: 10px;
+    margin: 5px;
+    width: 85%;
+    background-color: #30323A;
+    color: white;
+    border: 1px solid #777777;
+}
+
+textarea {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+    height: 70px;
+    background-color: #30323A;
+    color: white;
+    border: 1px solid #777777;
+}
+
+label {
+    margin: 10px;
+    color: white;
+}
+
+button {
+    width: 160px;
+    height: 45px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #D9A66F;
+    color: black;
+    border: 1px solid #D9A66F;
+}
+
+button:hover {
+    background-color: #B8834E;
+}
+
+#resultado {
+    color: #90EE90;
+    text-align: center;
+}
+
+#resultado p {
+    margin: 8px;
+}

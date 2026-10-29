@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cafetería - Práctica 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 id="titulo">Cafetería</h1>
+
+<div class="ejercicio">
+    <h2 class="encabezado">Formulario de pedido</h2>
+
+    <form onsubmit="return false">
+        <h3>Nombre</h3>
+        <input type="text" id="nombres" placeholder="Nombres" required>
+        <input type="text" id="apellidos" placeholder="Apellidos" required>
+
+        <h3>Correo</h3>
+        <input type="email" id="correo" placeholder="Correo" required>
+
+        <h3>Producto</h3>
+        <select id="producto" required>
+            <option value="">Selecciona un producto</option>
+            <option value="Café americano">Café americano</option>
+            <option value="Latte">Latte</option>
+            <option value="Capuchino">Capuchino</option>
+            <option value="Chocolate caliente">Chocolate caliente</option>
+            <option value="Té">Té</option>
+        </select>
+
+        <h3>Tamaño de la bebida</h3>
+        <label><input type="radio" name="tamano" value="Chico" required> Chico</label>
+        <label><input type="radio" name="tamano" value="Mediano"> Mediano</label>
+        <label><input type="radio" name="tamano" value="Grande"> Grande</label>
+
+        <h3>Cantidad</h3>
+        <select id="cantidad" required>
+            <option value="">Selecciona la cantidad</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <h3>Tipo de pedido</h3>
+        <label><input type="checkbox" id="paraLlevar"> Solicitar pedido para llevar</label>
+
+        <h3>Observaciones</h3>
+        <textarea id="observaciones" placeholder="Escribe tus observaciones"></textarea>
+
+        <div>
+            <button type="button" onclick="solicitarPedido()">Solicitar pedido</button>
+            <button type="reset" onclick="limpiar()">Limpiar</button>
+        </div>
+    </form>
+
+    <div id="resultado"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
